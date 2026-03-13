@@ -1,0 +1,32 @@
+---
+import { BadgeAlert } from '@lucide/astro';
+import { BookOpenText } from '@lucide/astro';
+import { Bug } from '@lucide/astro';
+import { Brain } from '@lucide/astro';
+import { Hand } from '@lucide/astro';
+---
+
+<section class="py-52 flex text-center bg-cover bg-center"
+style="background-image: url(/background/work.jpg);"
+>
+  <div class="mx-auto bg-[#d4aa76] text-black rounded-xl p-5 shadow-2xl">
+
+    <h2 class="text-4xl logo font-bold">Let's Work Together</h2>
+    <p class="mt-4">
+    I’m motivated to collaborate on meaningful projects and build real-world solutions.
+    </p>
+
+    <ul class="mt-6 space-y-2 text-left inline-block">
+      <li class="flex gap-x-2"><Brain/> <span>Analytical Thinking</span></li>
+      <li class="flex gap-x-2"><Bug/><span>Problem Solving</span></li>
+      <li class="flex gap-x-2"><BadgeAlert/> <span>Attention to Detail</span></li>
+      <li class="flex gap-x-2"><BookOpenText/><span>Continuous Learning</span></li>
+    </ul>
+    <div class="flex mt-5 font-bold justify-center gap-x-2 items-center">
+      <span>
+        Have a project in mind? Let’s talk.
+      </span>
+      <Hand/>
+    </div>
+  </div>
+</section>

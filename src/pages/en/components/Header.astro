@@ -1,0 +1,59 @@
+---
+import {Languages} from '@lucide/astro';
+import { Menu} from '@lucide/astro';
+---
+
+<header id="header" class="bg-black">
+  <div class="navbar shadow-sm">
+    
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn bg-cyan-600 hover:bg-cyan-500 text-white border-none shadow-none lg:hidden mr-5">
+          <Menu/>
+        </div>
+
+        <ul tabindex="-1"
+          class="menu menu-sm dropdown-content bg-cyan-600 text-white rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a href="#header" class="hover:bg-cyan-700">Home</a></li>
+          <li><a href="#projects" class="hover:bg-cyan-700">Projects</a></li>
+          <li><a href="#education" class="hover:bg-cyan-700">Educaction</a></li>
+          <li><a href="#languages" class="hover:bg-cyan-700">Languages</a></li>
+        </ul>
+      </div>
+
+      <h1 class="logo text-4xl">Olver</h1>
+    </div>
+
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#header" class="hover:bg-cyan-600">Home</a></li>
+        <li><a href="#projects" class="hover:bg-cyan-600">Projects</a></li>
+        <li><a href="#education" class="hover:bg-cyan-600">Education</a></li>
+        <li><a href="#languages" class="hover:bg-cyan-600">Languages</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn m-1 bg-cyan-600 hover:bg-cyan-500 border-none shadow-none text-white">
+          <Languages />
+        </div>
+        <ul tabindex="-1" class="dropdown-content menu bg-cyan-600 rounded-box z-1 w-52 p-2 shadow-sm">
+          <li>
+              <a href="/es" class="hover:bg-cyan-700 flex justify-between">
+                <span>Spanish</span>
+                <img src="/icons/spain-svgrepo-com.svg" class="w-4 h-4"/>                            
+              </a>
+           </li>
+          <li>
+              <a href="/en" class="hover:bg-cyan-700 flex justify-between">
+                <span>English</span>
+                <img src="/icons/flag-us-svgrepo-com.svg" class="w-4 h-4"/>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</header>

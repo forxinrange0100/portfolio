@@ -1,0 +1,33 @@
+---
+import { BadgeAlert } from '@lucide/astro';
+import { BookOpenText } from '@lucide/astro';
+import { Bug } from '@lucide/astro';
+import { Brain } from '@lucide/astro';
+import { Hand } from '@lucide/astro';
+---
+
+<section class="py-52 flex text-center bg-cover bg-center px-2"
+style="background-image: url(/background/work.jpg);"
+>
+  <div class="mx-auto bg-[#d4aa76] text-black rounded-xl p-5 shadow-2xl">
+
+    <h2 class="text-4xl logo font-bold">Trabajemos Juntos</h2>
+
+    <p class="mt-4">
+      Me motiva colaborar en proyectos significativos y construir soluciones reales.
+    </p>
+
+    <ul class="mt-6 space-y-2 text-left inline-block">
+      <li class="flex gap-x-2"><Brain/> <span>Pensamiento analítico</span></li>
+      <li class="flex gap-x-2"><Bug/><span>Resolución de problemas</span></li>
+      <li class="flex gap-x-2"><BadgeAlert/> <span>Atención al detalle</span></li>
+      <li class="flex gap-x-2"><BookOpenText/><span>Aprendizaje continuo</span></li>
+    </ul>
+    <div class="flex mt-5 font-bold justify-center gap-x-2 items-center ">
+    <span>
+      ¿Tienes un proyecto en mente? Hablemos.
+    </span>
+    <Hand/>
+    </div>
+  </div>
+</section>
