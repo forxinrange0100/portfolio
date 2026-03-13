@@ -1,3 +1,18 @@
 ---
-return Astro.redirect("/es");
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
+import Cta from "../components/Cta.astro";
 ---
+
+<Layout lang="es" title="Olver Arce | Portafolio">
+  <Header/>
+  <Hero/>
+  <Projects/>
+  <Education/>
+  <Cta/>
+  <Footer/>
+</Layout>
